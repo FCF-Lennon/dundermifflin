@@ -1,4 +1,4 @@
-package com.aiep.dundermifflin.config;
+/* package com.aiep.dundermifflin.config;
 
 import java.util.Collections;
 import org.slf4j.Logger;
@@ -39,3 +39,4 @@ public class PostgreSqlTestContainer implements SqlTestContainer {
         return postgreSQLContainer;
     }
 }
+ */
