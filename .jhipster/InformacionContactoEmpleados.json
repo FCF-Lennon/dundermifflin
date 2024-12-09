@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20241208235656"
+  },
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "telefono",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "15"
+    },
+    {
+      "fieldName": "tipoFono",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "20"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "InformacionContactoEmpleados",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
