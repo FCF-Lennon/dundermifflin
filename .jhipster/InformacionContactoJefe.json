@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20241210011332"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "telefono",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tipoFono",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "InformacionContactoJefe",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "jefes",
+      "relationshipName": "jefe",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

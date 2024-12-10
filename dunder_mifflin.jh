@@ -1,0 +1,49 @@
+entity Empleado {
+  nombreEmpleado String required,
+  apellidoEmpleado String required,
+  correo String required
+}
+
+entity InformacionContactoEmpleado {
+  telefono String required
+}
+
+entity Departamento {
+  nombreDepartamento String required,
+  ubicacionDepartamento String required
+}
+
+entity Presupuesto {
+  presupuestoDepartamento BigDecimal required
+}
+
+entity Jefes {
+  nombreJefe String required
+}
+
+entity InformacionContactoJefe {
+  telefono String required,
+  tipoFono String required
+}
+
+entity DepartamentosJefes {
+  // Relación entre departamentos y jefes (solo referencias a claves foráneas)
+}
+
+relationship ManyToOne {
+  InformacionContactoEmpleado{empleado} to Empleado,
+  InformacionContactoJefe{jefe} to Jefes,
+  DepartamentosJefes{departamento} to Departamento,
+  DepartamentosJefes{jefe} to Jefes,
+  Presupuesto{departamento} to Departamento
+}
+
+relationship ManyToMany {
+  Empleado{departamento} to Departamento{empleados}
+}
+
+dto * with mapstruct
+
+paginate * with pagination
+
+service * with serviceClass

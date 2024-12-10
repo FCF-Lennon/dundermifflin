@@ -8,7 +8,13 @@
       "entities": {
         "main": "Entidades",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
-        "informacionContactoEmpleados": "Informacion Contacto Empleados"
+        "departamento": "Departamento",
+        "departamentosJefes": "Departamentos Jefes",
+        "empleado": "Empleado",
+        "informacionContactoEmpleado": "Informacion Contacto Empleado",
+        "informacionContactoJefe": "Informacion Contacto Jefe",
+        "jefes": "Jefes",
+        "presupuesto": "Presupuesto"
       },
       "account": {
         "main": "Cuenta",

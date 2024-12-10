@@ -6,3 +6,8 @@ arrowParens: avoid
 bracketSameLine: false
 plugins:
   - prettier-plugin-packagejson
+  - prettier-plugin-java
+overrides:
+  - files: "*.java"
+    options:
+      tabWidth: 4

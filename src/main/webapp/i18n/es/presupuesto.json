@@ -1,0 +1,25 @@
+{
+  "dundermifflinApp": {
+    "presupuesto": {
+      "home": {
+        "title": "Presupuestos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Presupuesto",
+        "createOrEditLabel": "Crear o editar Presupuesto",
+        "notFound": "Ningún Presupuestos encontrado"
+      },
+      "created": "Un nuevo Presupuesto ha sido creado con el identificador {{ param }}",
+      "updated": "Un Presupuesto ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Presupuesto ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Presupuesto {{ id }}?"
+      },
+      "detail": {
+        "title": "Presupuesto"
+      },
+      "id": "ID",
+      "presupuestoDepartamento": "Presupuesto Departamento",
+      "departamento": "Departamento"
+    }
+  }
+}

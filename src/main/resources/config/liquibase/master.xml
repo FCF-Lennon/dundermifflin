@@ -3,12 +3,6 @@
     xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <property name="now" value="now()" dbms="h2"/>
-    <property name="floatType" value="float4" dbms="h2"/>
-    <property name="uuidType" value="uuid" dbms="h2"/>
-    <property name="datetimeType" value="datetime(6)" dbms="h2"/>
-    <property name="clobType" value="longvarchar" dbms="h2"/>
-    <property name="blobType" value="blob" dbms="h2"/>
     <property name="now" value="current_timestamp" dbms="postgresql"/>
     <property name="floatType" value="float4" dbms="postgresql"/>
     <property name="clobType" value="clob" dbms="postgresql"/>
@@ -17,8 +11,19 @@
     <property name="datetimeType" value="datetime" dbms="postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20241208235656_added_entity_InformacionContactoEmpleados.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011328_added_entity_Departamento.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011329_added_entity_DepartamentosJefes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011330_added_entity_Empleado.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011331_added_entity_InformacionContactoEmpleado.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011332_added_entity_InformacionContactoJefe.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011333_added_entity_Jefes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011334_added_entity_Presupuesto.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20241210011329_added_entity_constraints_DepartamentosJefes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011330_added_entity_constraints_Empleado.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011331_added_entity_constraints_InformacionContactoEmpleado.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011332_added_entity_constraints_InformacionContactoJefe.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241210011334_added_entity_constraints_Presupuesto.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

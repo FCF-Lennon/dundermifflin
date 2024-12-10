@@ -1,0 +1,26 @@
+{
+  "dundermifflinApp": {
+    "informacionContactoJefe": {
+      "home": {
+        "title": "Informacion Contacto Jefes",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Informacion Contacto Jefe",
+        "createOrEditLabel": "Crear o editar Informacion Contacto Jefe",
+        "notFound": "Ningún Informacion Contacto Jefes encontrado"
+      },
+      "created": "Un nuevo Informacion Contacto Jefe ha sido creado con el identificador {{ param }}",
+      "updated": "Un Informacion Contacto Jefe ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Informacion Contacto Jefe ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Informacion Contacto Jefe {{ id }}?"
+      },
+      "detail": {
+        "title": "Informacion Contacto Jefe"
+      },
+      "id": "ID",
+      "telefono": "Telefono",
+      "tipoFono": "Tipo Fono",
+      "jefe": "Jefe"
+    }
+  }
+}

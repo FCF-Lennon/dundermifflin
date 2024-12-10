@@ -1,2 +1,2 @@
 org.springframework.test.context.ContextCustomizerFactory = com.aiep.\
-    dundermifflin.config.SqlTestContainersSpringContextCustomizerFactory
+    dundurmifflin.config.SqlTestContainersSpringContextCustomizerFactory

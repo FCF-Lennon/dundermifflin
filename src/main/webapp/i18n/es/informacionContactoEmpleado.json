@@ -1,0 +1,25 @@
+{
+  "dundermifflinApp": {
+    "informacionContactoEmpleado": {
+      "home": {
+        "title": "Informacion Contacto Empleados",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Informacion Contacto Empleado",
+        "createOrEditLabel": "Crear o editar Informacion Contacto Empleado",
+        "notFound": "Ningún Informacion Contacto Empleados encontrado"
+      },
+      "created": "Un nuevo Informacion Contacto Empleado ha sido creado con el identificador {{ param }}",
+      "updated": "Un Informacion Contacto Empleado ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Informacion Contacto Empleado ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Informacion Contacto Empleado {{ id }}?"
+      },
+      "detail": {
+        "title": "Informacion Contacto Empleado"
+      },
+      "id": "ID",
+      "telefono": "Telefono",
+      "empleado": "Empleado"
+    }
+  }
+}

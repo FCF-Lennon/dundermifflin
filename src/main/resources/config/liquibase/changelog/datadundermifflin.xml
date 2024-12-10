@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd">
+
+    <changeSet id="1" author="pepidev">
+        <dunder_mifflin>
+            <!-- Jefes -->
+            <jefes>
+                <jefe id_jefe="1">
+                    <nombre>Michael Scott</nombre>
+                </jefe>
+                <jefe id_jefe="2">
+                    <nombre>Jan Levinson</nombre>
+                </jefe>
+                <jefe id_jefe="3">
+                    <nombre>Holly Flax</nombre>
+                </jefe>
+                <jefe id_jefe="4">
+                    <nombre>Oscar Martinez</nombre>
+                </jefe>
+                <jefe id_jefe="5">
+                    <nombre>Creed Bratton</nombre>
+                </jefe>
+                <jefe id_jefe="6">
+                    <nombre>David Wallace</nombre>
+                </jefe>
+            </jefes>
+
+            <!-- Información de Contacto de Jefes -->
+            <informacion_contacto_jefe>
+                <contacto id_jefe="1">
+                    <telefono>555-1234</telefono>
+                    <tipofono>Movil</tipofono>
+                </contacto>
+                <contacto id_jefe="2">
+                    <telefono>555-5678</telefono>
+                    <tipofono>Movil</tipofono>
+                </contacto>
+                <contacto id_jefe="3">
+                    <telefono>555-3456</telefono>
+                    <tipofono>Oficina</tipofono>
+                </contacto>
+                <contacto id_jefe="4">
+                    <telefono>555-8901</telefono>
+                    <tipofono>Movil</tipofono>
+                </contacto>
+                <contacto id_jefe="5">
+                    <telefono>555-3333</telefono>
+                    <tipofono>Casa</tipofono>
+                </contacto>
+                <contacto id_jefe="6">
+                    <telefono>555-9999</telefono>
+                    <tipofono>Familiar</tipofono>
+                </contacto>
+            </informacion_contacto_jefe>
+
+            <!-- Departamentos -->
+            <departamentos>
+                <departamento id_departamento="1">
+                    <nombre>Ventas</nombre>
+                    <ubicacion>Scranton</ubicacion>
+                </departamento>
+                <departamento id_departamento="2">
+                    <nombre>Recepción</nombre>
+                    <ubicacion>Scranton</ubicacion>
+                </departamento>
+                <departamento id_departamento="3">
+                    <nombre>Contabilidad</nombre>
+                    <ubicacion>Scranton</ubicacion>
+                </departamento>
+                <departamento id_departamento="4">
+                    <nombre>Recursos Humanos</nombre>
+                    <ubicacion>Scranton</ubicacion>
+                </departamento>
+                <departamento id_departamento="5">
+                    <nombre>Proveedores</nombre>
+                    <ubicacion>Scranton</ubicacion>
+                </departamento>
+                <departamento id_departamento="6">
+                    <nombre>Servicio al Cliente</nombre>
+                    <ubicacion>Scranton</ubicacion>
+                </departamento>
+                <departamento id_departamento="7">
+                    <nombre>Almacén</nombre>
+                    <ubicacion>Scranton</ubicacion>
+                </departamento>
+                <departamento id_departamento="8">
+                    <nombre>Corporativo</nombre>
+                    <ubicacion>Nueva York</ubicacion>
+                </departamento>
+            </departamentos>
+
+            <!-- Presupuestos -->
+            <presupuestos>
+                <presupuesto id_departamento="1">
+                    <monto>150000</monto>
+                </presupuesto>
+                <presupuesto id_departamento="2">
+                    <monto>50000</monto>
+                </presupuesto>
+                <presupuesto id_departamento="3">
+                    <monto>80000</monto>
+                </presupuesto>
+                <presupuesto id_departamento="4">
+                    <monto>60000</monto>
+                </presupuesto>
+                <presupuesto id_departamento="5">
+                    <monto>70000</monto>
+                </presupuesto>
+                <presupuesto id_departamento="6">
+                    <monto>40000</monto>
+                </presupuesto>
+                <presupuesto id_departamento="7">
+                    <monto>50000</monto>
+                </presupuesto>
+                <presupuesto id_departamento="8">
+                    <monto>200000</monto>
+                </presupuesto>
+            </presupuestos>
+
+            <!-- Empleados -->
+            <empleados>
+                <empleado id_empleado="1">
+                    <nombre>Michael</nombre>
+                    <apellido>Scott</apellido>
+                    <correo>michael.scott@dundermifflin.com</correo>
+                </empleado>
+                <empleado id_empleado="2">
+                    <nombre>Jim</nombre>
+                    <apellido>Halpert</apellido>
+                    <correo>jim.halpert@dundermifflin.com</correo>
+                </empleado>
+                <empleado id_empleado="3">
+                    <nombre>Dwight</nombre>
+                    <apellido>Schrute</apellido>
+                    <correo>dwight.schrute@dundermifflin.com</correo>
+                </empleado>
+                <empleado id_empleado="4">
+                    <nombre>Pam</nombre>
+                    <apellido>Beesly</apellido>
+                    <correo>pam.beesly@dundermifflin.com</correo>
+                </empleado>
+                <empleado id_empleado="5">
+                    <nombre>Ryan</nombre>
+                    <apellido>Howard</apellido>
+                    <correo>ryan.howard@dundermifflin.com</correo>
+                </empleado>
+                <empleado id_empleado="6">
+                    <nombre>Angela</nombre>
+                    <apellido>Martin</apellido>
+                    <correo>angela.martin@dundermifflin.com</correo>
+                </empleado>
+                <empleado id_empleado="7">
+                    <nombre>Kevin</nombre>
+                    <apellido>Malone</apellido>
+                    <correo>kevin.malone@dundermifflin.com</correo>
+                </empleado>
+                <empleado id_empleado="8">
+                    <nombre>Oscar</nombre>
+                    <apellido>Martinez</apellido>
+                    <correo>oscar.martinez@dundermifflin.com</correo>
+                </empleado>
+                <empleado id_empleado="9">
+                    <nombre>Toby</nombre>
+                    <apellido>Flenderson</apellido>
+                    <correo>toby.flenderson@dundermifflin.com</correo>
+                </empleado>
+                <empleado id_empleado="10">
+                    <nombre>Holly</nombre>
+                    <apellido>Flax</apellido>
+                    <correo>holly.flax@dundermifflin.com</correo>
+                </empleado>
+                <!-- Otros empleados siguen el mismo formato... -->
+            </empleados>
+
+            <!-- Información de Contacto de Empleados -->
+            <informacion_contacto_empleado>
+                <contacto id_empleado="1">
+                    <telefono>555-1234</telefono>
+                </contacto>
+                <contacto id_empleado="2">
+                    <telefono>555-2345</telefono>
+                </contacto>
+                <contacto id_empleado="3">
+                    <telefono>555-3456</telefono>
+                </contacto>
+            <contacto id_empleado="4">
+                    <telefono>555-4567</telefono>
+                </contacto>
+            <contacto id_empleado="5">
+                    <telefono>555-5678</telefono>
+                </contacto>
+            <contacto id_empleado="6">
+                    <telefono>555-6789</telefono>
+                </contacto>
+            <contacto id_empleado="7">
+                    <telefono>555-7890</telefono>
+                </contacto>
+            <contacto id_empleado="8">
+                    <telefono>555-8901</telefono>
+                </contacto>
+            <contacto id_empleado="9">
+                    <telefono>555-9012</telefono>
+                </contacto>
+            <contacto id_empleado="10">
+                    <telefono>555-3456</telefono>
+                </contacto>
+                <!-- Otros contactos siguen el mismo formato... -->
+            </informacion_contacto_empleado>
+
+            <!-- Relaciones Empleados-Departamentos -->
+            <empleado_departamento>
+                <relacion id_empleado="1" id_departamento="1" />
+                <relacion id_empleado="2" id_departamento="1" />
+                <relacion id_empleado="3" id_departamento="1" />
+                <relacion id_empleado="4" id_departamento="2" />
+                <relacion id_empleado="5" id_departamento="1" />
+                <relacion id_empleado="6" id_departamento="3" />
+                <relacion id_empleado="7" id_departamento="3" />
+                <relacion id_empleado="8" id_departamento="3" />
+                <relacion id_empleado="9" id_departamento="4" />
+                <relacion id_empleado="10" id_departamento="4" />
+                <!-- Otras relaciones siguen el mismo formato... -->
+            </empleado_departamento>
+
+            <!-- Relación Departamentos-Jefes -->
+            <departamentos_jefes>
+                <relacion id_departamento="1" id_jefe="2" />
+                <relacion id_departamento="2" id_jefe="1" />
+                <relacion id_departamento="3" id_jefe="4" />
+                <relacion id_departamento="4" id_jefe="3" />
+                <relacion id_departamento="5" id_jefe="5" />
+                <relacion id_departamento="6" id_jefe="1" />
+                <relacion id_departamento="7" id_jefe="1" />
+                <relacion id_departamento="8" id_jefe="6" />
+                <!-- Otras relaciones siguen el mismo formato... -->
+            </departamentos_jefes>
+        </dunder_mifflin>
+    </changeSet>
+
+</databaseChangeLog>
