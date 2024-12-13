@@ -6,15 +6,15 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
                         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
     <!--
-        Added the constraints for entity Presupuesto.
+        Added the constraints for entity InformacionContactoEmpleado.
     -->
-    <changeSet id="20241211015119-2" author="jhipster">
+    <changeSet id="20241213015909-2" author="jhipster">
 
-        <addForeignKeyConstraint baseColumnNames="departamento_id"
-                                 baseTableName="presupuesto"
-                                 constraintName="fk_presupuesto__departamento_id"
+        <addForeignKeyConstraint baseColumnNames="empleado_id"
+                                 baseTableName="informacion_contacto_empleado"
+                                 constraintName="fk_informacion_contacto_empleado__empleado_id"
                                  referencedColumnNames="id"
-                                 referencedTableName="departamento"
+                                 referencedTableName="empleado"
                                  />
     </changeSet>
 </databaseChangeLog>

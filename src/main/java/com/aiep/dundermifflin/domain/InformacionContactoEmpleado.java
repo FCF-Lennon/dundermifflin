@@ -22,6 +22,9 @@ public class InformacionContactoEmpleado implements Serializable {
     @Column(name = "telefono")
     private String telefono;
 
+    @Column(name = "tipo_fono")
+    private String tipoFono;
+
     @ManyToOne(fetch = FetchType.LAZY)
     private Empleado empleado;
 
@@ -51,6 +54,19 @@ public class InformacionContactoEmpleado implements Serializable {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public String getTipoFono() {
+        return this.tipoFono;
+    }
+
+    public InformacionContactoEmpleado tipoFono(String tipoFono) {
+        this.setTipoFono(tipoFono);
+        return this;
+    }
+
+    public void setTipoFono(String tipoFono) {
+        this.tipoFono = tipoFono;
     }
 
     public Empleado getEmpleado() {
@@ -91,6 +107,7 @@ public class InformacionContactoEmpleado implements Serializable {
         return "InformacionContactoEmpleado{" +
             "id=" + getId() +
             ", telefono='" + getTelefono() + "'" +
+            ", tipoFono='" + getTipoFono() + "'" +
             "}";
     }
 }

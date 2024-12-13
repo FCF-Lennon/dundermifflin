@@ -13,6 +13,8 @@ public class InformacionContactoEmpleadoDTO implements Serializable {
 
     private String telefono;
 
+    private String tipoFono;
+
     private EmpleadoDTO empleado;
 
     public Long getId() {
@@ -29,6 +31,14 @@ public class InformacionContactoEmpleadoDTO implements Serializable {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public String getTipoFono() {
+        return tipoFono;
+    }
+
+    public void setTipoFono(String tipoFono) {
+        this.tipoFono = tipoFono;
     }
 
     public EmpleadoDTO getEmpleado() {
@@ -66,6 +76,7 @@ public class InformacionContactoEmpleadoDTO implements Serializable {
         return "InformacionContactoEmpleadoDTO{" +
             "id=" + getId() +
             ", telefono='" + getTelefono() + "'" +
+            ", tipoFono='" + getTipoFono() + "'" +
             ", empleado=" + getEmpleado() +
             "}";
     }

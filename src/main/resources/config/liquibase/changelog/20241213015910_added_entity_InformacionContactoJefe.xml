@@ -7,14 +7,17 @@
                         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
     <!--
-        Added the entity DepartamentosJefes.
+        Added the entity InformacionContactoJefe.
     -->
-    <changeSet id="20241211015113-1" author="jhipster">
-        <createTable tableName="departamentos_jefes">
+    <changeSet id="20241213015910-1" author="jhipster">
+        <createTable tableName="informacion_contacto_jefe">
             <column name="id" type="bigint">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="departamento_id" type="bigint">
+            <column name="telefono" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tipo_fono" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
             <column name="jefe_id" type="bigint">
@@ -34,13 +37,15 @@
           This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
           Spring Boot configuration key.
     -->
-    <changeSet id="20241211015113-1-data" author="jhipster" context="faker">
+    <changeSet id="20241213015910-1-data" author="jhipster" context="faker">
         <loadData
-                  file="config/liquibase/fake-data/departamentos_jefes.csv"
+                  file="config/liquibase/fake-data/informacion_contacto_jefe.csv"
                   separator=";"
-                  tableName="departamentos_jefes"
+                  tableName="informacion_contacto_jefe"
                   usePreparedStatements="true">
             <column name="id" type="numeric"/>
+            <column name="telefono" type="string"/>
+            <column name="tipo_fono" type="string"/>
             <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
         </loadData>
     </changeSet>

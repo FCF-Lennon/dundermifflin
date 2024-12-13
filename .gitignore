@@ -152,6 +152,7 @@ Desktop.ini
 /coverage/
 /.nyc_output/
 # Server connection and backend specifics
+src/main/docker/postgresql.yml
 src/main/resources/config/application*.yml
 src/main/resources/config/application*.properties
 src/main/resources/static/

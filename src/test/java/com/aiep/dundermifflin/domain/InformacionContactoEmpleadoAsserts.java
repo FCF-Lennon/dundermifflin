@@ -59,7 +59,8 @@ public class InformacionContactoEmpleadoAsserts {
     ) {
         assertThat(expected)
             .as("Verify InformacionContactoEmpleado relevant properties")
-            .satisfies(e -> assertThat(e.getTelefono()).as("check telefono").isEqualTo(actual.getTelefono()));
+            .satisfies(e -> assertThat(e.getTelefono()).as("check telefono").isEqualTo(actual.getTelefono()))
+            .satisfies(e -> assertThat(e.getTipoFono()).as("check tipoFono").isEqualTo(actual.getTipoFono()));
     }
 
     /**

@@ -6,13 +6,20 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
                         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
     <!--
-        Added the constraints for entity InformacionContactoJefe.
+        Added the constraints for entity DepartamentosJefes.
     -->
-    <changeSet id="20241211015117-2" author="jhipster">
+    <changeSet id="20241213015906-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="departamento_id"
+                                 baseTableName="departamentos_jefes"
+                                 constraintName="fk_departamentos_jefes__departamento_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="departamento"
+                                 />
 
         <addForeignKeyConstraint baseColumnNames="jefe_id"
-                                 baseTableName="informacion_contacto_jefe"
-                                 constraintName="fk_informacion_contacto_jefe__jefe_id"
+                                 baseTableName="departamentos_jefes"
+                                 constraintName="fk_departamentos_jefes__jefe_id"
                                  referencedColumnNames="id"
                                  referencedTableName="jefes"
                                  />

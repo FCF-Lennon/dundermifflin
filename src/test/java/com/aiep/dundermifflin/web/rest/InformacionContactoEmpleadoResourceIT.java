@@ -37,6 +37,9 @@ class InformacionContactoEmpleadoResourceIT {
     private static final String DEFAULT_TELEFONO = "AAAAAAAAAA";
     private static final String UPDATED_TELEFONO = "BBBBBBBBBB";
 
+    private static final String DEFAULT_TIPO_FONO = "AAAAAAAAAA";
+    private static final String UPDATED_TIPO_FONO = "BBBBBBBBBB";
+
     private static final String ENTITY_API_URL = "/api/informacion-contacto-empleados";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -69,7 +72,7 @@ class InformacionContactoEmpleadoResourceIT {
      * if they test an entity which requires the current entity.
      */
     public static InformacionContactoEmpleado createEntity() {
-        return new InformacionContactoEmpleado().telefono(DEFAULT_TELEFONO);
+        return new InformacionContactoEmpleado().telefono(DEFAULT_TELEFONO).tipoFono(DEFAULT_TIPO_FONO);
     }
 
     /**
@@ -79,7 +82,7 @@ class InformacionContactoEmpleadoResourceIT {
      * if they test an entity which requires the current entity.
      */
     public static InformacionContactoEmpleado createUpdatedEntity() {
-        return new InformacionContactoEmpleado().telefono(UPDATED_TELEFONO);
+        return new InformacionContactoEmpleado().telefono(UPDATED_TELEFONO).tipoFono(UPDATED_TIPO_FONO);
     }
 
     @BeforeEach
@@ -162,7 +165,8 @@ class InformacionContactoEmpleadoResourceIT {
             .andExpect(status().isOk())
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.[*].id").value(hasItem(informacionContactoEmpleado.getId().intValue())))
-            .andExpect(jsonPath("$.[*].telefono").value(hasItem(DEFAULT_TELEFONO)));
+            .andExpect(jsonPath("$.[*].telefono").value(hasItem(DEFAULT_TELEFONO)))
+            .andExpect(jsonPath("$.[*].tipoFono").value(hasItem(DEFAULT_TIPO_FONO)));
     }
 
     @Test
@@ -177,7 +181,8 @@ class InformacionContactoEmpleadoResourceIT {
             .andExpect(status().isOk())
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.id").value(informacionContactoEmpleado.getId().intValue()))
-            .andExpect(jsonPath("$.telefono").value(DEFAULT_TELEFONO));
+            .andExpect(jsonPath("$.telefono").value(DEFAULT_TELEFONO))
+            .andExpect(jsonPath("$.tipoFono").value(DEFAULT_TIPO_FONO));
     }
 
     @Test
@@ -201,7 +206,7 @@ class InformacionContactoEmpleadoResourceIT {
             .orElseThrow();
         // Disconnect from session so that the updates on updatedInformacionContactoEmpleado are not directly saved in db
         em.detach(updatedInformacionContactoEmpleado);
-        updatedInformacionContactoEmpleado.telefono(UPDATED_TELEFONO);
+        updatedInformacionContactoEmpleado.telefono(UPDATED_TELEFONO).tipoFono(UPDATED_TIPO_FONO);
         InformacionContactoEmpleadoDTO informacionContactoEmpleadoDTO = informacionContactoEmpleadoMapper.toDto(
             updatedInformacionContactoEmpleado
         );
@@ -332,7 +337,7 @@ class InformacionContactoEmpleadoResourceIT {
         InformacionContactoEmpleado partialUpdatedInformacionContactoEmpleado = new InformacionContactoEmpleado();
         partialUpdatedInformacionContactoEmpleado.setId(informacionContactoEmpleado.getId());
 
-        partialUpdatedInformacionContactoEmpleado.telefono(UPDATED_TELEFONO);
+        partialUpdatedInformacionContactoEmpleado.telefono(UPDATED_TELEFONO).tipoFono(UPDATED_TIPO_FONO);
 
         restInformacionContactoEmpleadoMockMvc
             .perform(
